@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservations</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+        form div{
+            width: 100%;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <form target="" method="post" >
+        <h1>Reserve</h1>
+        <div>
+            <label>First name:</label>
+            <input type="text" required placeholder="first name" />
+        </div>
+        <div>
+            <label>Last name:</label>
+            <input type="text" required placeholder="last name" />
+        </div>
+        <div>
+            <label>City name:</label>
+            <input type="text" required placeholder="city" />
+        </div>
+        <div>
+            <label>State:</label>
+            <select name="state" id="">
+                <option value="California">CA</option>
+                <option value="Texas">TX</option>
+                <option value="Colorado">CO</option>
+            </select>
+        </div>
+        <div>
+            <label>Zipcode:</label>
+            <input type="number" required placeholder="Zip code" />
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" required placeholder="some" />
+        </div>
+        <div>
+            <label>Age:</label>
+            <select name="age" id="">
+                <option value="Under 18">Under 18</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46-55">46-55</option>
+                <option value="56+">56+</option>
+            </select>
+        </div>
+        <div>
+            <label>Reservation date:</label>
+            <input type="date" required/>
+        </div>
+        <div>
+            <label>Total guests:</label>
+            <input type="number" required placeholder="4"/>
+        </div>
+        <div>
+            <label>Comments:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
